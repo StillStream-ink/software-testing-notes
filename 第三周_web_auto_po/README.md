@@ -36,8 +36,6 @@
 ├── requirements.txt # 项目依赖
 └── README.md
 
-text
-
 ## 📋 测试流程
 
 测试用例覆盖了完整的购物流程：
@@ -49,36 +47,17 @@ text
 5. 提取订单总价并校验
 6. 完成订单并验证成功
 
-## 🚀 快速开始
-
-### 1. 安装依赖
+## 🚀 运行方式
 
 ```bash
 pip install -r requirements.txt
 playwright install
-2. 运行测试
-bash
 pytest tests/test_sucedemo_po.py -v --alluredir=./allure-results --clean-alluredir
-3. 查看 Allure 报告
-bash
 allure serve ./allure-results
-注意：Allure 报告必须通过 allure serve 命令打开，不能直接双击 HTML 文件。
+
+Allure 报告必须通过 allure serve 命令打开，不能直接双击 HTML 文件。
 
 📊 测试报告截图
-概览
-https://images/allure_overview.png
-
-环境信息
-https://images/allure_environment.png
-
-Behaviors 分类
-https://images/allure_behaviors.png
-
-Suites 层级
-https://images/allure_suites.png
-
-用例详情
-https://images/allure_test_detail.png
 
 📝 项目说明
 该项目是第三周 Web 自动化测试学习的产出，旨在展示：
@@ -89,11 +68,4 @@ PO 模式封装页面对象的设计思路
 
 结合 pytest + Allure 生成专业测试报告
 
-📦 依赖清单
-playwright
-
-pytest
-
-allure-pytest
-
-该测试项目基于 SauceDemo 演示网站 (https://www.saucedemo.com) 构建，仅用于学习与作品展示。
+该测试项目基于 SauceDemo 演示网站 (https://www.saucedemo.com) 构建，仅用于学习与作品展示

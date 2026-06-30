@@ -1,9 +1,14 @@
 import pytest
+import allure
 from playwright.sync_api import Page
 from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
 from pages.cart_page import CartPage
 
+@allure.feature("购物流程")
+@allure.story("完整下单流程")
+@allure.title("测试 saucedemo 完整购物流程")
+@allure.severity(allure.severity_level.CRITICAL)
 def test_saucedemo_full_flow_po(page: Page):
     # 使用 PO 模式完成测试
     login_page = LoginPage(page)
@@ -13,9 +18,13 @@ def test_saucedemo_full_flow_po(page: Page):
     # 登录
     login_page.navigate().login("standard_user", "secret_sauce")
     inventory_page.wait_for_load()
+    # 1、登录完成截图
+    allure.attach(page.screenshot(), "登录完成页面", allure.attachment_type.PNG)
 
     # 加购 2 件商品
     inventory_page.add_items_to_cart(2).go_to_cart()
+    # 2、购物车页面截图
+    allure.attach(page.screenshot(), "购物车页面", allure.attachment_type.PNG)
 
     # 校验购物车数量
     assert cart_page.get_cart_count() == 2, "购物车数量应为 2 件"
@@ -30,8 +39,8 @@ def test_saucedemo_full_flow_po(page: Page):
     cart_page.complete_order()
 
     # 验证订单完成
-    assert cart_page.is_order_complete(), "订单完成页面未出现"          # 验证订单完成
-  
+    assert cart_page.is_order_complete(), "订单完成页面未出现"
+    # 3、订单完成截图
+    allure.attach(page.screenshot(), "订单完成页面", allure.attachment_type.PNG)
 
     print("✅ PO 模式测试通过")
-

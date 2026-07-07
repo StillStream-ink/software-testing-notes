@@ -27,7 +27,7 @@ jobs:
 
     - name: Run tests
       run: |
-        ppytest tests/test_saucedemo_po.py -v --alluredir=./allure-results --clean-alluredir
+        pytest 第三周_web_auto_po/tests/test_saucedemo_po.py -v --alluredir=./allure-results --clean-alluredir
 
     - name: Upload Allure results
       uses: actions/upload-artifact@v4

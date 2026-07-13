@@ -26,17 +26,22 @@ jobs:
 
       - name: Debug directory structure
         run: |
+          echo "=== 当前目录 ==="
           pwd
+          echo "=== 根目录文件列表 ==="
           ls -la
-          ls -la 第三周_web_auto_po/tests/
-          
+          echo "=== tests/ 目录 ==="
+          ls -la tests/ || echo "tests/ 不存在"
+          echo "=== 第三周_web_auto_po/tests/ 目录 ==="
+          ls -la 第三周_web_auto_po/tests/ || echo "第三周_web_auto_po/tests/ 不存在"
 
       - name: Run tests
         run: |
-         pytest tests/test_saucedemo_po.py -v --alluredir=./allure-results --clean-alluredir
+          cd 第三周_web_auto_po
+          pytest tests/test_saucedemo_po.py -v --alluredir=./allure-results --clean-alluredir
 
       - name: Upload Allure results
         uses: actions/upload-artifact@v4
         with:
           name: allure-results
-          path: allure-results
+          path: 第三周_web_auto_po/allure-results

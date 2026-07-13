@@ -24,6 +24,13 @@ jobs:
           pip install pytest playwright allure-pytest
           playwright install --with-deps chromium
 
+      - name: Debug directory structure
+        run: |
+          pwd
+          ls -la
+          ls -la 第三周_web_auto_po/tests/
+          
+
       - name: Run tests
         run: |
           pytest tests/test_sucedemo_po.py -v --alluredir=./allure-results --clean-alluredir

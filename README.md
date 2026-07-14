@@ -1,6 +1,7 @@
 # 软件测试学习笔记 & 作品集
 
 > 从零开始的软件测试学习之路，记录学习过程与实战产出。
+> ![CI](https://github.com/StillStream-ink/software-testing-notes/actions/workflows/ci.yml/badge.svg)
 
 ## 关于我
 

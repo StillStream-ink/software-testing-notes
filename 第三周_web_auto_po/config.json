@@ -1,0 +1,14 @@
+{
+  "base_url": "https://www.saucedemo.com",
+  "users": {
+    "standard_user": "secret_sauce",
+    "locked_out_user": "secret_sauce",
+    "problem_user": "secret_sauce"
+  },
+  "test_data": {
+    "first_name": "Test",
+    "last_name": "User",
+    "postal_code": "12345",
+    "item_count": 2
+  }
+}

@@ -40,6 +40,17 @@ jobs:
           cd 第三周_web_auto_po
           pytest tests/test_saucedemo_po.py -v --alluredir=./allure-results --clean-alluredir
 
+      - name: Copy environment properties
+        run: |
+          cd 第三周_web_auto_po
+          cp environment.properties allure-results/
+
+      - name: Generate Allure Report
+        run: |
+          cd 第三周_web_auto_po
+          npm install -g allure-commandline
+          allure generate allure-results -o allure-report --clean
+      
       - name: Upload Allure results
         uses: actions/upload-artifact@v4
         with:

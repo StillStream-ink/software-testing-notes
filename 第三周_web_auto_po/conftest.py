@@ -1,5 +1,4 @@
 import pytest
-import sys
 import json
 import os
 import logging
@@ -35,7 +34,7 @@ CONFIG = load_config()
 def page():
     """每个测试用例独立浏览器实例"""
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
+        browser = p.chromium.launch(headless=False)
         context = browser.new_context()
         page = context.new_page()
         page.set_default_timeout(60000)

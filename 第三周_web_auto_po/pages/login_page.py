@@ -7,7 +7,7 @@ class LoginPage:
         self.username_input = page.locator("#user-name")
         self.password_input = page.locator("#password")
         self.login_button = page.locator("#login-button")
-        self.error_msg = page.locator("[data-test='error]")
+        self.error_msg = page.locator("[data-test='error']")
 
     def navigate(self):
         """打开登录页"""

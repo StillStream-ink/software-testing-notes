@@ -35,6 +35,25 @@ jobs:
           echo "=== 第三周_web_auto_po/tests/ 目录 ==="
           ls -la 第三周_web_auto_po/tests/ || echo "第三周_web_auto_po/tests/ 不存在"
 
+      - name: Checkout gh-pages branch for history
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages-history
+          fetch-depth: 1
+        continue-on-error: true
+      
+      - name: Copy history to allure-results
+        run: |
+          cd 第三周_web_auto_po
+          if [ -d ../gh-pages-history/allure-report/history ]; then
+            mkdir -p allure-results/history
+            cp -r ../gh-pages-history/allure-report/history/* allure-results/history/
+            echo "✅ 历史数据已恢复"
+          else
+            echo "⚠️ 未找到历史数据，首次运行"
+          fi
+
       - name: Run tests
         run: |
           cd 第三周_web_auto_po
@@ -61,6 +80,22 @@ jobs:
             "reportName": "Allure Report"
           }
           EOF
+
+      - name: Save history to gh-pages branch
+        run: |
+          cd 第三周_web_auto_po
+          if [ -d allure-report/history ]; then
+            mkdir -p ../gh-pages-history/allure-report/
+            cp -r allure-report/history ../gh-pages-history/allure-report/
+            cd ../gh-pages-history
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add allure-report/history
+            git commit -m "Update history for trend" || echo "No changes to commit"
+            git push
+          else
+            echo "⚠️ 无历史数据可保存"
+          fi
 
       - name: Generate Allure Report
         run: |

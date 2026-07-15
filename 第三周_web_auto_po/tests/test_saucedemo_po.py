@@ -82,6 +82,32 @@ class TestLogin:
         allure.attach(page.screenshot(), "问题用户登录后页面", allure.attachment_type.PNG)
         LOGGER.info("问题用户登录测试通过")
 
+    @pytest.mark.parametrize("user,expected_success", [
+        ("standard_user", True),
+        ("locked_out_user", False),
+        ("problem_user", True),
+    ])
+    @allure.story("多用户登录测试")
+    @allure.title("测试用户 {user} 登录")
+    @allure.severity(allure.severity_level.NORMAL)
+    def test_login_with_users(self, page: Page, user, expected_success):
+        login_page = LoginPage(page)
+        LOGGER.info(f"测试用户登录：{user}")
+        login_page.navigate().login(user, CONFIG["users"].get(user, ""))
+
+        if expected_success:
+            inventory_page = InventoryPage(page)
+            inventory_page.wait_for_load()
+            assert inventory_page.inventory_list.is_visible()
+            allure.attach(page.screenshot(), f"{user} 登录成功", allure.attachment_type.PNG)
+            LOGGER.info(f"{user} 登录成功")
+        else:
+            login_page.wait_for_error()
+            error_text = login_page.get_error_text()
+            allure.attach(page.screenshot(), f"{user} 登录失败", allure.attachment_type.PNG)
+            LOGGER.info(f"{user} 登录失败，错误提示：{error_text}")
+            assert "locked out" in error_text.lower() or "username" in error_text.lower()
+
 
 @allure.feature("购物车功能")
 class TestCart:

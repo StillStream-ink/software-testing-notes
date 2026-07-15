@@ -1,3 +1,0 @@
-2026-07-15 08:01:01,434 - INFO - 开始测试锁定用户登录
-2026-07-15 08:01:01,795 - INFO - 错误提示: Epic sadface: Sorry, this user has been locked out.
-2026-07-15 08:01:01,824 - INFO - 锁定用户登录测试通过

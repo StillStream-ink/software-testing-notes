@@ -1,0 +1,2 @@
+INFO     root:test_saucedemo_po.py:95 测试用户登录：locked_out_user
+INFO     root:test_saucedemo_po.py:108 locked_out_user 登录失败，错误提示：Epic sadface: Sorry, this user has been locked out.

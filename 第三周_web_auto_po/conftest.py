@@ -3,6 +3,8 @@ import sys
 import json
 import os
 import logging
+import allure
+from playwright.sync_api import Page
 from playwright.sync_api import sync_playwright
 
 # ========== 日志配置 ==========
@@ -42,3 +44,20 @@ def page():
         yield page
         context.close()
         browser.close()
+
+@pytest.hookimpl(tryfirst=True, hookwrapper=True)
+def pytest_runtest_makereport(item, call):
+    outcome = yield
+    report = outcome.get_result()
+    
+    if report.when == "call" and report.failed:
+        # 获取 page fixture
+        page = item.funcargs.get("page")
+        if page and isinstance(page, Page):
+            screenshot = page.screenshot(full_page=True)
+            allure.attach(
+                screenshot,
+                name=f"失败截图_{item.name}",
+                attachment_type=allure.attachment_type.PNG
+            )
+            print(f"✅ 失败截图已嵌入报告: {item.name}")

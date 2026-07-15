@@ -18,20 +18,28 @@ class TestShoppingFlow:
         inventory_page = InventoryPage(page)
         cart_page = CartPage(page)
 
+        # 从配置文件读取测试数据
+        user = CONFIG["test_data"].get("user", "standard_user")
+        password = CONFIG["users"].get(user, "secret_sauce")
+        first_name = CONFIG["test_data"].get("first_name", "Test")
+        last_name = CONFIG["test_data"].get("last_name", "User")
+        postal_code = CONFIG["test_data"].get("postal_code", "12345")
+        item_count = CONFIG["test_data"].get("item_count", 2)
+
         with allure.step("1. 登录 saucedemo 网站"):
-            login_page.navigate().login("standard_user", CONFIG["users"]["standard_user"])
+            login_page.navigate().login(user, password)
             inventory_page.wait_for_load()
             allure.attach(page.screenshot(), "登录后商品页", allure.attachment_type.PNG)
 
-        with allure.step("2. 添加 2 件商品到购物车"):
-            inventory_page.add_items_to_cart(2).go_to_cart()
+        with allure.step("2. 添加商品到购物车"):
+            inventory_page.add_items_to_cart(item_count).go_to_cart()
             allure.attach(page.screenshot(), "购物车页面", allure.attachment_type.PNG)
 
         with allure.step("3. 校验购物车商品数量"):
-            assert cart_page.get_cart_count() == 2, "购物车数量应为2件"
+            assert cart_page.get_cart_count() == item_count, f"购物车数量应为 {item_count} 件"
 
         with allure.step("4. 填写结算信息并验证总价"):
-            cart_page.checkout("Test", "User", "12345")
+            cart_page.checkout(first_name, last_name, postal_code)
             total_price = cart_page.get_total_price()
             assert total_price > 0, f"订单总价应大于0，实际为 {total_price}"
 

@@ -34,7 +34,7 @@ CONFIG = load_config()
 def page():
     """每个测试用例独立浏览器实例"""
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)
+        browser = p.chromium.launch(headless=True)
         context = browser.new_context()
         page = context.new_page()
         page.set_default_timeout(60000)

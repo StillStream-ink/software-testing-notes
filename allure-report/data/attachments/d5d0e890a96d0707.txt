@@ -1,0 +1,3 @@
+INFO     root:test_saucedemo_po.py:75 开始测试问题用户登录
+INFO     root:test_saucedemo_po.py:81 第一个商品图片地址: /assets/sl-404-Cq1a9k9X.jpg
+INFO     root:test_saucedemo_po.py:83 问题用户登录测试通过

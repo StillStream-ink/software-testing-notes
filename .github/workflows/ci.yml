@@ -45,6 +45,23 @@ jobs:
           cd 第三周_web_auto_po
           cp environment.properties allure-results/
 
+      - name: Create executor.json
+        run: |
+          cd 第三周_web_auto_po
+          mkdir -p allure-results
+          cat > allure-results/executor.json << EOF
+          {
+            "name": "GitHub Actions",
+            "type": "github",
+            "url": "https://github.com/StillStream-ink/software-testing-notes",
+            "buildOrder": "${{ github.run_number }}",
+            "buildName": "GitHub Actions Run #${{ github.run_number }}",
+            "buildUrl": "https://github.com/StillStream-ink/software-testing-notes/actions/runs/${{ github.run_id }}",
+            "reportUrl": "https://stillstream-ink.github.io/software-testing-notes/allure-report/",
+            "reportName": "Allure Report"
+          }
+          EOF
+
       - name: Generate Allure Report
         run: |
           cd 第三周_web_auto_po

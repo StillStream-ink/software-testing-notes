@@ -24,17 +24,6 @@ jobs:
           pip install pytest playwright allure-pytest
           playwright install --with-deps chromium
 
-      - name: Debug directory structure
-        run: |
-          echo "=== 当前目录 ==="
-          pwd
-          echo "=== 根目录文件列表 ==="
-          ls -la
-          echo "=== tests/ 目录 ==="
-          ls -la tests/ || echo "tests/ 不存在"
-          echo "=== 第三周_web_auto_po/tests/ 目录 ==="
-          ls -la 第三周_web_auto_po/tests/ || echo "第三周_web_auto_po/tests/ 不存在"
-
       - name: Checkout gh-pages branch for history
         uses: actions/checkout@v4
         with:
@@ -42,7 +31,7 @@ jobs:
           path: gh-pages-history
           fetch-depth: 1
         continue-on-error: true
-      
+
       - name: Copy history to allure-results
         run: |
           cd 第三周_web_auto_po
@@ -62,12 +51,11 @@ jobs:
       - name: Copy environment properties
         run: |
           cd 第三周_web_auto_po
-          cp environment.properties allure-results/
+          cp environment.properties allure-results/ || echo "environment.properties 不存在"
 
       - name: Create executor.json
         run: |
           cd 第三周_web_auto_po
-          mkdir -p allure-results
           cat > allure-results/executor.json << EOF
           {
             "name": "GitHub Actions",
@@ -86,20 +74,8 @@ jobs:
           cd 第三周_web_auto_po
           npm install -g allure-commandline
           allure generate allure-results -o allure-report --clean
-      
-      - name: Upload Allure results
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-results
-          path: 第三周_web_auto_po/allure-results
 
-      - name: Generate Allure Report
-        run: |
-          cd 第三周_web_auto_po
-          npm install -g allure-commandline
-          allure generate allure-results -o allure-report --clean
-
-      - name: Save history to gh-pages branch
+      - name: Save history to gh-pages
         run: |
           cd 第三周_web_auto_po
           if [ -d allure-report/history ]; then
@@ -123,7 +99,8 @@ jobs:
           destination_dir: allure-report
           keep_files: false
 
-
-
-
-        
+      - name: Upload Allure results
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results
+          path: 第三周_web_auto_po/allure-results

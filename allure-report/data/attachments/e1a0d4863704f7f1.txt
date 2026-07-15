@@ -1,0 +1,2 @@
+INFO     root:test_saucedemo_po.py:19 开始执行完整购物流程测试
+INFO     root:test_saucedemo_po.py:38 完整购物流程测试通过

@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","406","测试 problem_user 登录后页面展示","tests","2026-07-15","passed","2026-07-15","","test_saucedemo_po","",""
+"","485","空购物车直接结算","tests","2026-07-15","passed","2026-07-15","","test_saucedemo_po","",""
+"","1028","测试 saucedemo 完整购物流程","tests","2026-07-15","passed","2026-07-15","","test_saucedemo_po","",""
+"","391","测试 locked_out_user 登录失败","tests","2026-07-15","passed","2026-07-15","","test_saucedemo_po","",""

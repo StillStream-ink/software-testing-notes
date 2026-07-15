@@ -45,3 +45,22 @@ jobs:
         with:
           name: allure-results
           path: 第三周_web_auto_po/allure-results
+
+      - name: Generate Allure Report
+        run: |
+          cd 第三周_web_auto_po
+          npm install -g allure-commandline
+          allure generate allure-results -o allure-report --clean
+
+      - name: Deploy Allure Report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./第三周_web_auto_po/allure-report
+          destination_dir: allure-report
+          keep_files: false
+
+
+
+
+        

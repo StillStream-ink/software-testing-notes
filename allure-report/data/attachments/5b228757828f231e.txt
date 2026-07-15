@@ -1,0 +1,2 @@
+INFO     root:test_saucedemo_po.py:86 开始测试空购物车结算
+INFO     root:test_saucedemo_po.py:95 空购物车结算测试通过

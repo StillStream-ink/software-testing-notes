@@ -1,0 +1,3 @@
+INFO     root:test_saucedemo_po.py:52 开始测试锁定用户登录
+INFO     root:test_saucedemo_po.py:56 错误提示: Epic sadface: Sorry, this user has been locked out.
+INFO     root:test_saucedemo_po.py:59 锁定用户登录测试通过

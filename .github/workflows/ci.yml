@@ -90,6 +90,9 @@ jobs:
       - name: Debug - check history in allure-report
         run: |
           cd 第三周_web_auto_po
+          echo "=== allure-report/history 目录内容 ==="
+          ls -la allure-report/history/ || echo "history 目录不存在"
+          echo "=== history-trend.json 内容 ==="
           cat allure-report/history/history-trend.json || echo "history-trend.json 不存在"
 
       - name: Save history to gh-pages

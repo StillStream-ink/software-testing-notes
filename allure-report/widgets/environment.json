@@ -1,1 +1,1 @@
-[{"values":["Chromium (Playwright)"],"name":"Browser"},{"values":["3.13.14"],"name":"Python"},{"values":["Ubuntu 22.04 (GitHub Actions)"],"name":"OS"},{"values":["pytest + allure"],"name":"TestFramework"},{"values":["Saucedemo Web Automation"],"name":"Project"},{"values":["CI"],"name":"TestEnv"}]
+[]

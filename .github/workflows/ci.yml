@@ -11,71 +11,70 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
-
-steps:
-  - name: Checkout code
-    uses: actions/checkout@v4
-
-  - name: Set up Python
-    uses: actions/setup-python@v5
-    with:
-      python-version: '3.13'
-
-  - name: Install dependencies
-    run: |
-      pip install pytest playwright allure-pytest
-      playwright install --with-deps chromium
-
-  - name: Checkout gh-pages branch for history
-    uses: actions/checkout@v4
-    with:
-      ref: gh-pages
-      path: gh-pages-history
-      fetch-depth: 1
-    continue-on-error: true
-
-  - name: Run tests
-    run: |
-      cd 第三周_web_auto_po
-      pytest tests/test_saucedemo_po.py -v --alluredir=./allure-results --clean-alluredir
-
-  - name: Copy history to allure-results
-    run: |
-      cd 第三周_web_auto_po
-      if [ -d ../gh-pages-history/allure-report/history ]; then
-        mkdir -p allure-results/history
-        cp -r ../gh-pages-history/allure-report/history/* allure-results/history/
-        echo "✅ 历史数据已恢复"
-      else
-        echo "⚠️ 未找到历史数据，首次运行"
-      fi
-
-  - name: Generate Allure Report
-    run: |
-      cd 第三周_web_auto_po
-      npm install -g allure-commandline
-      allure generate allure-results -o allure-report --clean
-
-  - name: Save history to gh-pages
-    run: |
-      cd 第三周_web_auto_po
-      if [ -d allure-report/history ]; then
-        mkdir -p ../gh-pages-history/allure-report/
-        cp -r allure-report/history ../gh-pages-history/allure-report/
-        cd ../gh-pages-history
-        git config user.name "github-actions[bot]"
-        git config user.email "github-actions[bot]@users.noreply.github.com"
-        git add allure-report/history
-        git commit -m "Update history for trend" || echo "No changes to commit"
-        git push
-      else
-        echo "⚠️ 无历史数据可保存"
-      fi
-
-  - name: Deploy Allure Report to GitHub Pages
-    uses: peaceiris/actions-gh-pages@v3
-    with:
-      github_token: ${{ secrets.GITHUB_TOKEN }}
-      publish_dir: ./第三周_web_auto_po/allure-report
-      destination_dir: allure-report
-      keep_files: false
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+    
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+    
+      - name: Install dependencies
+        run: |
+          pip install pytest playwright allure-pytest
+          playwright install --with-deps chromium
+    
+      - name: Checkout gh-pages branch for history
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages-history
+          fetch-depth: 1
+        continue-on-error: true
+    
+      - name: Run tests
+        run: |
+          cd 第三周_web_auto_po
+          pytest tests/test_saucedemo_po.py -v --alluredir=./allure-results --clean-alluredir
+    
+      - name: Copy history to allure-results
+        run: |
+          cd 第三周_web_auto_po
+          if [ -d ../gh-pages-history/allure-report/history ]; then
+            mkdir -p allure-results/history
+            cp -r ../gh-pages-history/allure-report/history/* allure-results/history/
+            echo "✅ 历史数据已恢复"
+          else
+            echo "⚠️ 未找到历史数据，首次运行"
+          fi
+    
+      - name: Generate Allure Report
+        run: |
+          cd 第三周_web_auto_po
+          npm install -g allure-commandline
+          allure generate allure-results -o allure-report --clean
+    
+      - name: Save history to gh-pages
+        run: |
+          cd 第三周_web_auto_po
+          if [ -d allure-report/history ]; then
+            mkdir -p ../gh-pages-history/allure-report/
+            cp -r allure-report/history ../gh-pages-history/allure-report/
+            cd ../gh-pages-history
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add allure-report/history
+            git commit -m "Update history for trend" || echo "No changes to commit"
+            git push
+          else
+            echo "⚠️ 无历史数据可保存"
+          fi
+    
+      - name: Deploy Allure Report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./第三周_web_auto_po/allure-report
+          destination_dir: allure-report
+          keep_files: false

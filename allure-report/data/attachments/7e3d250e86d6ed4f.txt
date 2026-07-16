@@ -1,2 +1,0 @@
-2026-07-16 13:01:48,992 - INFO - 测试用户登录：locked_out_user
-2026-07-16 13:01:49,403 - INFO - locked_out_user 登录失败，错误提示：Epic sadface: Sorry, this user has been locked out.

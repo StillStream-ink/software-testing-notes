@@ -85,7 +85,7 @@ jobs:
         run: |
           cd 第三周_web_auto_po
           npm install -g allure-commandline
-          allure generate allure-results -o allure-report --clean
+          allure generate allure-results -o allure-report --clean --history
 
       - name: Debug - check history in allure-report
         run: |

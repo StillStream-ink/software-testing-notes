@@ -75,6 +75,12 @@ jobs:
           }
           EOF
 
+      - name: Debug allure-results history
+        run: |
+          cd 第三周_web_auto_po
+          ls -la allure-results/history/ || echo "history 目录不存在"
+          cat allure-results/history/history-trend.json || echo "history-trend.json 不存在"
+
       - name: Generate Allure Report
         run: |
           cd 第三周_web_auto_po

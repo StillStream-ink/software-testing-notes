@@ -75,10 +75,12 @@
 
 ## 🚀 运行方式
 
-### 1. 安装依赖
+### 1. 安装全局依赖
 
+项目基于Python，先一次性安装自动化+性能测试全部依赖
 ```bash
 pip install -r requirements.txt
+# 安装Playwright浏览器驱动
 playwright install
 
 ### 2. 运行自动化测试
@@ -88,17 +90,22 @@ pytest tests/test_saucedemo_po.py -v --alluredir=./allure-results --clean-allure
 
 ### 3. 查看 Allure 报告
 
-本地查看
+**本地查看**
+
 ```bash
 allure serve ./allure-results
 
-在线查看
-📊 查看 Allure 测试报告
+**在线查看**
+
+📊 [查看 Allure 测试报告](https://stillstream-ink.github.io/software-testing-notes/allure-report/)
+
+![Allure报告概览](images/allure_overview.png)
 
 ⚠️ Allure 报告必须通过 allure serve 命令打开，不能直接双击 HTML 文件。
 
 
-⚡ 性能测试
+## ⚡ 性能测试
+
 项目使用 Locust 进行简单的性能测试。
 
 ```bash
@@ -111,9 +118,12 @@ locust -f performance/locustfile.py --host=https://www.saucedemo.com
 
 然后访问 http://localhost:8089，设置并发用户数（如 10 个），点击 Start 开始压测。
 
-📊 测试报告截图
 
-### 概览
+## 📊 测试报告截图
+
+**在线查看**
+
+📊 [查看 Allure 测试报告](https://stillstream-ink.github.io/software-testing-notes/allure-report/)
 
 ![概览](images/allure_overview.png)
 
@@ -133,12 +143,9 @@ locust -f performance/locustfile.py --host=https://www.saucedemo.com
 
 ![用例详情](images/allure_test_detail.png)
 
-### Locust 压测截图
 
-![Locust 压测截图](images/locust_test.png)
+## 📝 项目说明
 
-
-📝 项目说明
 该项目是 Web 自动化测试学习的产出，旨在展示：
 
 从零搭建 Playwright 自动化测试环境

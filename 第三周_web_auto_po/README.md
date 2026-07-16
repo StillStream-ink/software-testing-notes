@@ -83,12 +83,12 @@ pip install -r requirements.txt
 # 安装Playwright浏览器驱动
 playwright install
 
-### 2. 运行自动化测试
+ 2. 运行自动化测试
 
 ```bash
 pytest tests/test_saucedemo_po.py -v --alluredir=./allure-results --clean-alluredir
 
-### 3. 查看 Allure 报告
+ 3. 查看 Allure 报告
 
 **本地查看**
 

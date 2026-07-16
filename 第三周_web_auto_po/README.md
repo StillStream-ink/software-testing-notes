@@ -74,27 +74,37 @@
 
 ## 🚀 运行方式
 
-### 安装依赖
+### 1. 安装依赖
 
 ```bash
 pip install -r requirements.txt
 playwright install
 
-运行测试
+### 2. 运行自动化测试
+
+```bash
 pytest tests/test_saucedemo_po.py -v --alluredir=./allure-results --clean-alluredir
 
-查看 Allure 报告
-Allure 报告必须通过 allure serve 命令打开，不能直接双击 HTML 文件。
+### 3. 查看 Allure 报告
+
+本地查看
+```bash
 allure serve ./allure-results
 
-在线报告
+在线查看
 📊 查看 Allure 测试报告
+
+⚠️ Allure 报告必须通过 allure serve 命令打开，不能直接双击 HTML 文件。
+
 
 ⚡ 性能测试
 项目使用 Locust 进行简单的性能测试。
 
-运行方式
+```bash
+# 安装 Locust
 pip install locust
+
+# 启动压测
 cd 第三周_web_auto_po
 locust -f performance/locustfile.py --host=https://www.saucedemo.com
 

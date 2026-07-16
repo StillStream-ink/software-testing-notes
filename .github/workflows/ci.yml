@@ -41,10 +41,9 @@ jobs:
 
       - name: Copy history to allure-results
         run: |
-          cd 第三周_web_auto_po
-          if [ -d ../gh-pages-history/history ]; then
-            mkdir -p allure-results/history
-            cp -r ../gh-pages-history/history/* allure-results/history/
+          if [ -d gh-pages-history/history ]; then
+            mkdir -p 第三周_web_auto_po/allure-results/history
+            cp -r gh-pages-history/history/* 第三周_web_auto_po/allure-results/history/
             echo "✅ 历史数据已恢复"
           else
             echo "⚠️ 未找到历史数据，首次运行"

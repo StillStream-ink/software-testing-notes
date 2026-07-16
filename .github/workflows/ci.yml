@@ -87,6 +87,15 @@ jobs:
           npm install -g allure-commandline
           allure generate allure-results -o allure-report --clean --history
 
+      - name: Merge history data
+        run: |
+          cd 第三周_web_auto_po
+          if [ -d ../gh-pages-history/allure-report/history ]; then
+            mkdir -p allure-results/history
+            cp -r ../gh-pages-history/allure-report/history/* allure-results/history/
+            echo "✅ 历史数据已合并"
+          fi
+
       - name: Debug - check history in allure-report
         run: |
           cd 第三周_web_auto_po

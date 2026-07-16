@@ -23,6 +23,7 @@
 
 ## 📁 项目结构
 
+```text
 第三周_web_auto_po/
 ├── config/
 │   └── config.json              # 测试数据配置
@@ -48,7 +49,7 @@
 ├── environment.properties       # Allure 环境信息
 ├── requirements.txt             # 项目依赖
 └── README.md
-
+```
 
 ## 📋 测试流程
 

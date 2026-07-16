@@ -8,6 +8,9 @@
 - **Playwright**：现代化的 Web 自动化测试框架，支持多浏览器、自动等待
 - **pytest**：灵活的测试用例管理与执行
 - **Allure 报告**：专业的测试报告，含 Environment 环境信息、步骤截图、分类展示
+- **数据驱动**：测试数据集中管理在 config.json 中，支持多环境快速切换
+- **日志系统**：测试执行过程自动记录日志，便于问题追溯
+- **持续集成**：GitHub Actions 自动运行测试，每次代码提交自动触发
 
 ## 🛠️ 技术栈
 
@@ -16,52 +19,116 @@
 - pytest
 - allure-pytest
 - Allure 命令行工具
+- GitHub Actions
 
 ## 📁 项目结构
+
 第三周_web_auto_po/
+├── config/
+│   └── config.json              # 测试数据配置
 ├── pages/
-│ ├── cart_page.py # 购物车及结算页面对象
-│ ├── inventory_page.py # 商品列表页面对象
-│ └── login_page.py # 登录页面对象
+│   ├── cart_page.py             # 购物车及结算页面对象
+│   ├── inventory_page.py        # 商品列表页面对象
+│   └── login_page.py            # 登录页面对象
 ├── tests/
-│ └── test_sucedemo_po.py # PO 模式测试用例
-├── images/ # Allure 报告截图
-│ ├── allure_overview.png
-│ ├── allure_environment.png
-│ ├── allure_behaviors.png
-│ ├── allure_suites.png
-│ └── allure_test_detail.png
-├── conftest.py # pytest fixture 配置
-├── environment.properties # Allure 环境信息
-├── requirements.txt # 项目依赖
+│   └── test_saucedemo_po.py     # PO 模式测试用例（7条）
+├── performance/
+│   └── locustfile.py            # Locust 性能测试脚本
+├── images/
+│   ├── allure_overview.png      # Allure 报告概览截图
+│   ├── allure_environment.png   # Allure 环境信息截图
+│   ├── allure_behaviors.png     # Allure Behaviors 截图
+│   ├── allure_suites.png        # Allure Suites 截图
+│   ├── allure_test_detail.png   # Allure 用例详情截图
+│   └── locust_test.png          # Locust 压测截图
+├── .github/
+│   └── workflows/
+│       └── ci.yml               # GitHub Actions CI 配置
+├── conftest.py                  # pytest fixture + 日志 + 配置加载
+├── environment.properties       # Allure 环境信息
+├── requirements.txt             # 项目依赖
 └── README.md
+
 
 ## 📋 测试流程
 
 测试用例覆盖了完整的购物流程：
 
 1. 登录（standard_user）
-2. 添加 2 件商品到购物车
+2. 添加商品到购物车
 3. 进入购物车并校验商品数量
 4. 填写收货信息
 5. 提取订单总价并校验
 6. 完成订单并验证成功
 
+### 测试覆盖
+
+| 测试场景 | 用例数 | 说明 |
+|----------|--------|------|
+| 完整购物流程 | 1 | 登录 → 加购 → 结算 → 完成订单 |
+| 锁定用户登录 | 1 | 验证 locked_out_user 登录失败并提示 |
+| 问题用户登录 | 1 | 验证 problem_user 登录后页面展示异常 |
+| 空购物车结算 | 1 | 空购物车进入结算页面 |
+| 多用户参数化登录 | 3 | 覆盖 standard_user、locked_out_user、problem_user |
+| **总计** | **7** | 全部通过 ✅ |
+
 ## 🚀 运行方式
+
+### 安装依赖
 
 ```bash
 pip install -r requirements.txt
 playwright install
-pytest tests/test_sucedemo_po.py -v --alluredir=./allure-results --clean-alluredir
+
+运行测试
+pytest tests/test_saucedemo_po.py -v --alluredir=./allure-results --clean-alluredir
+
+查看 Allure 报告
+Allure 报告必须通过 allure serve 命令打开，不能直接双击 HTML 文件。
 allure serve ./allure-results
 
-Allure 报告必须通过 allure serve 命令打开，不能直接双击 HTML 文件。
+在线报告
+📊 查看 Allure 测试报告
+
+⚡ 性能测试
+项目使用 Locust 进行简单的性能测试。
+
+运行方式
+pip install locust
+cd 第三周_web_auto_po
+locust -f performance/locustfile.py --host=https://www.saucedemo.com
+
+然后访问 http://localhost:8089，设置并发用户数（如 10 个），点击 Start 开始压测。
 
 📊 测试报告截图
 
+### 概览
+
+![概览](images/allure_overview.png)
+
+### Environment
+
+![Environment](images/allure_environment.png)
+
+### Behaviors
+
+![Behaviors](images/allure_behaviors.png)
+
+### Suites
+
+![Suites](images/allure_suites.png)
+
+### 用例详情
+
+![用例详情](images/allure_test_detail.png)
+
+### Locust 压测截图
+
+![Locust 压测截图](images/locust_test.png)
+
 
 📝 项目说明
-该项目是第三周 Web 自动化测试学习的产出，旨在展示：
+该项目是 Web 自动化测试学习的产出，旨在展示：
 
 从零搭建 Playwright 自动化测试环境
 
@@ -69,4 +136,8 @@ PO 模式封装页面对象的设计思路
 
 结合 pytest + Allure 生成专业测试报告
 
-该测试项目基于 SauceDemo 演示网站 (https://www.saucedemo.com) 构建，仅用于学习与作品展示
+数据驱动 + 日志系统的工程化实践
+
+GitHub Actions 持续集成自动运行测试
+
+该测试项目基于 SauceDemo 演示网站 (https://www.saucedemo.com) 构建，仅用于学习与作品展示。

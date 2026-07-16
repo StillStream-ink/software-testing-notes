@@ -34,10 +34,10 @@ jobs:
           fetch-depth: 1
         continue-on-error: true
 
-      - name: Debug gh-pages history directory
+      - name: Debug gh-pages-history structure
         run: |
           ls -la gh-pages-history/
-          ls -la gh-pages-history/allure-report/ || echo "allure-report 目录不存在"
+          ls -la gh-pages-history/allure-report/ || echo "allure-report 不存在"
 
       - name: Copy history to allure-results
         run: |

@@ -121,8 +121,7 @@ cd 第三周_web_auto_po
 locust -f performance/locustfile.py --host=https://www.saucedemo.com
 ```
 
-然后访问 http://localhost:8089，设置并发用户数（如 10 个），点击 Start 开始压测。
-
+然后访问 `http://localhost:8089`，设置并发用户数（如 10 个），点击 **Start** 开始压测。
 
 ## 📊 测试报告截图
 

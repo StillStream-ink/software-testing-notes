@@ -1,0 +1,3 @@
+2026-07-17 04:30:22,016 - INFO - 开始测试锁定用户登录
+2026-07-17 04:30:22,303 - INFO - 错误提示: Epic sadface: Sorry, this user has been locked out.
+2026-07-17 04:30:22,350 - INFO - 锁定用户登录测试通过

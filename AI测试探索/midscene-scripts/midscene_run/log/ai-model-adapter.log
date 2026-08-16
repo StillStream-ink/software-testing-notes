@@ -1,0 +1,4 @@
+[2026-08-16T17:26:09.384+08:00] model adapter "qwen3" unsupportedUserConfig: ["reasoningEffort"]
+[2026-08-16T17:31:15.914+08:00] model adapter "qwen3" unsupportedUserConfig: ["reasoningEffort"]
+[2026-08-16T17:39:12.868+08:00] model adapter "qwen3" unsupportedUserConfig: ["reasoningEffort"]
+[2026-08-16T18:10:27.531+08:00] model adapter "qwen3" unsupportedUserConfig: ["reasoningEffort"]

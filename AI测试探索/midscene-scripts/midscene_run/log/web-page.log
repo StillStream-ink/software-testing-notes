@@ -1,0 +1,278 @@
+[2026-08-16T17:26:09.427+08:00] evaluate function begin
+[2026-08-16T17:26:09.442+08:00] Midscene - Added base-select appearance style for select elements because of forceChromeSelectRendering is enabled
+[2026-08-16T17:26:09.443+08:00] evaluate function end
+[2026-08-16T17:26:09.444+08:00] screenshotBase64 begin
+[2026-08-16T17:26:09.554+08:00] screenshotBase64 end, cost: 109ms
+[2026-08-16T17:26:13.216+08:00] screenshotBase64 begin
+[2026-08-16T17:26:13.269+08:00] screenshotBase64 end, cost: 53ms
+[2026-08-16T17:26:13.503+08:00] clearInput begin
+[2026-08-16T17:26:13.503+08:00] mouse move to 639, 251
+[2026-08-16T17:26:13.518+08:00] mouse click 639, 251, left, 1
+[2026-08-16T17:26:13.704+08:00] keyboard press [ { key: 'Backspace' } ]
+[2026-08-16T17:26:13.712+08:00] clearInput end
+[2026-08-16T17:26:13.712+08:00] evaluate function begin
+[2026-08-16T17:26:14.231+08:00] evaluate function end
+[2026-08-16T17:26:14.231+08:00] keyboard type standard_user
+[2026-08-16T17:26:14.557+08:00] waitForNavigation begin at moment afterInvokeAction with timeout: 5000 and actionName: Input
+[2026-08-16T17:26:14.558+08:00] [midscene:warning] waitForNetworkIdle is skipped for Playwright. Playwright does not provide an equivalent underlying capability for the intended post-action network idle behavior here.
+[2026-08-16T17:26:14.603+08:00] waitForNavigation end
+[2026-08-16T17:26:14.604+08:00] screenshotBase64 begin
+[2026-08-16T17:26:14.662+08:00] screenshotBase64 end, cost: 58ms
+[2026-08-16T17:26:17.390+08:00] screenshotBase64 begin
+[2026-08-16T17:26:17.449+08:00] screenshotBase64 end, cost: 58ms
+[2026-08-16T17:26:17.665+08:00] clearInput begin
+[2026-08-16T17:26:17.665+08:00] mouse move to 639, 323
+[2026-08-16T17:26:17.682+08:00] mouse click 639, 323, left, 1
+[2026-08-16T17:26:17.850+08:00] keyboard press [ { key: 'Backspace' } ]
+[2026-08-16T17:26:17.854+08:00] clearInput end
+[2026-08-16T17:26:17.854+08:00] evaluate function begin
+[2026-08-16T17:26:18.367+08:00] evaluate function end
+[2026-08-16T17:26:18.368+08:00] keyboard type secret_sauce
+[2026-08-16T17:26:18.704+08:00] waitForNavigation begin at moment afterInvokeAction with timeout: 5000 and actionName: Input
+[2026-08-16T17:26:18.716+08:00] waitForNavigation end
+[2026-08-16T17:26:18.718+08:00] screenshotBase64 begin
+[2026-08-16T17:26:18.765+08:00] screenshotBase64 end, cost: 47ms
+[2026-08-16T17:26:22.453+08:00] screenshotBase64 begin
+[2026-08-16T17:26:22.503+08:00] screenshotBase64 end, cost: 50ms
+[2026-08-16T17:26:22.722+08:00] mouse move to 639, 395
+[2026-08-16T17:26:22.726+08:00] mouse click 639, 395, left, 1
+[2026-08-16T17:26:23.048+08:00] waitForNavigation begin at moment afterInvokeAction with timeout: 5000 and actionName: Tap
+[2026-08-16T17:26:23.067+08:00] waitForNavigation end
+[2026-08-16T17:26:23.070+08:00] screenshotBase64 begin
+[2026-08-16T17:26:23.123+08:00] screenshotBase64 end, cost: 54ms
+[2026-08-16T17:26:24.587+08:00] screenshotBase64 begin
+[2026-08-16T17:26:24.644+08:00] screenshotBase64 end, cost: 56ms
+[2026-08-16T17:26:27.668+08:00] screenshotBase64 begin
+[2026-08-16T17:26:27.721+08:00] screenshotBase64 end, cost: 53ms
+[2026-08-16T17:26:28.967+08:00] screenshotBase64 begin
+[2026-08-16T17:26:29.025+08:00] screenshotBase64 end, cost: 58ms
+[2026-08-16T17:26:29.055+08:00] screenshotBase64 begin
+[2026-08-16T17:26:29.117+08:00] screenshotBase64 end, cost: 62ms
+[2026-08-16T17:26:32.905+08:00] screenshotBase64 begin
+[2026-08-16T17:26:32.968+08:00] screenshotBase64 end, cost: 63ms
+[2026-08-16T17:26:33.186+08:00] evaluate function begin
+[2026-08-16T17:26:33.190+08:00] evaluate function end
+[2026-08-16T17:26:33.190+08:00] mouse move to 639, 359
+[2026-08-16T17:26:33.193+08:00] mouse wheel 0, 503.99999999999994
+[2026-08-16T17:26:34.021+08:00] waitForNavigation begin at moment afterInvokeAction with timeout: 5000 and actionName: Scroll
+[2026-08-16T17:26:34.035+08:00] waitForNavigation end
+[2026-08-16T17:26:34.037+08:00] screenshotBase64 begin
+[2026-08-16T17:26:34.106+08:00] screenshotBase64 end, cost: 68ms
+[2026-08-16T17:26:38.065+08:00] screenshotBase64 begin
+[2026-08-16T17:26:38.113+08:00] screenshotBase64 end, cost: 48ms
+[2026-08-16T17:26:38.336+08:00] mouse move to 384, 251
+[2026-08-16T17:26:38.341+08:00] mouse click 384, 251, left, 1
+[2026-08-16T17:26:38.674+08:00] waitForNavigation begin at moment afterInvokeAction with timeout: 5000 and actionName: Tap
+[2026-08-16T17:26:38.681+08:00] waitForNavigation end
+[2026-08-16T17:26:38.682+08:00] screenshotBase64 begin
+[2026-08-16T17:26:38.734+08:00] screenshotBase64 end, cost: 51ms
+[2026-08-16T17:26:42.375+08:00] screenshotBase64 begin
+[2026-08-16T17:26:42.434+08:00] screenshotBase64 end, cost: 58ms
+[2026-08-16T17:26:42.667+08:00] mouse move to 639, 636
+[2026-08-16T17:26:42.669+08:00] mouse click 639, 636, left, 1
+[2026-08-16T17:26:42.978+08:00] waitForNavigation begin at moment afterInvokeAction with timeout: 5000 and actionName: Tap
+[2026-08-16T17:26:42.996+08:00] waitForNavigation end
+[2026-08-16T17:26:42.998+08:00] screenshotBase64 begin
+[2026-08-16T17:26:43.054+08:00] screenshotBase64 end, cost: 55ms
+[2026-08-16T17:26:45.027+08:00] screenshotBase64 begin
+[2026-08-16T17:26:45.080+08:00] screenshotBase64 end, cost: 53ms
+[2026-08-16T17:26:47.129+08:00] screenshotBase64 begin
+[2026-08-16T17:26:47.205+08:00] screenshotBase64 end, cost: 75ms
+[2026-08-16T17:26:50.320+08:00] screenshotBase64 begin
+[2026-08-16T17:26:50.392+08:00] screenshotBase64 end, cost: 71ms
+[2026-08-16T17:26:50.628+08:00] mouse move to 1132, 54
+[2026-08-16T17:26:50.634+08:00] mouse click 1132, 54, left, 1
+[2026-08-16T17:26:50.955+08:00] waitForNavigation begin at moment afterInvokeAction with timeout: 5000 and actionName: Tap
+[2026-08-16T17:26:50.966+08:00] waitForNavigation end
+[2026-08-16T17:26:50.968+08:00] screenshotBase64 begin
+[2026-08-16T17:26:51.028+08:00] screenshotBase64 end, cost: 60ms
+[2026-08-16T17:26:53.564+08:00] screenshotBase64 begin
+[2026-08-16T17:26:53.619+08:00] screenshotBase64 end, cost: 54ms
+[2026-08-16T17:26:55.663+08:00] screenshotBase64 begin
+[2026-08-16T17:26:55.721+08:00] screenshotBase64 end, cost: 58ms
+[2026-08-16T17:26:56.958+08:00] screenshotBase64 begin
+[2026-08-16T17:26:57.015+08:00] screenshotBase64 end, cost: 58ms
+[2026-08-16T17:31:15.959+08:00] Midscene - Added base-select appearance style for select elements because of forceChromeSelectRendering is enabled
+[2026-08-16T17:31:15.966+08:00] evaluate function begin
+[2026-08-16T17:31:15.975+08:00] evaluate function end
+[2026-08-16T17:31:15.976+08:00] screenshotBase64 begin
+[2026-08-16T17:31:16.062+08:00] screenshotBase64 end, cost: 86ms
+[2026-08-16T17:31:20.525+08:00] screenshotBase64 begin
+[2026-08-16T17:31:20.586+08:00] screenshotBase64 end, cost: 61ms
+[2026-08-16T17:31:20.820+08:00] mouse move to 639, 259
+[2026-08-16T17:31:20.831+08:00] mouse click 639, 259, left, 1
+[2026-08-16T17:31:21.161+08:00] waitForNavigation begin at moment afterInvokeAction with timeout: 5000 and actionName: Tap
+[2026-08-16T17:31:21.163+08:00] [midscene:warning] waitForNetworkIdle is skipped for Playwright. Playwright does not provide an equivalent underlying capability for the intended post-action network idle behavior here.
+[2026-08-16T17:31:21.211+08:00] waitForNavigation end
+[2026-08-16T17:31:21.213+08:00] screenshotBase64 begin
+[2026-08-16T17:31:21.295+08:00] screenshotBase64 end, cost: 82ms
+[2026-08-16T17:31:23.533+08:00] screenshotBase64 begin
+[2026-08-16T17:31:23.595+08:00] screenshotBase64 end, cost: 62ms
+[2026-08-16T17:31:23.823+08:00] keyboard type standard_user
+[2026-08-16T17:31:24.147+08:00] waitForNavigation begin at moment afterInvokeAction with timeout: 5000 and actionName: Input
+[2026-08-16T17:31:24.156+08:00] waitForNavigation end
+[2026-08-16T17:31:24.158+08:00] screenshotBase64 begin
+[2026-08-16T17:31:24.223+08:00] screenshotBase64 end, cost: 64ms
+[2026-08-16T17:31:28.155+08:00] screenshotBase64 begin
+[2026-08-16T17:31:28.201+08:00] screenshotBase64 end, cost: 46ms
+[2026-08-16T17:31:28.420+08:00] mouse move to 639, 331
+[2026-08-16T17:31:28.426+08:00] mouse click 639, 331, left, 1
+[2026-08-16T17:31:28.792+08:00] waitForNavigation begin at moment afterInvokeAction with timeout: 5000 and actionName: Tap
+[2026-08-16T17:31:28.800+08:00] waitForNavigation end
+[2026-08-16T17:31:28.801+08:00] screenshotBase64 begin
+[2026-08-16T17:31:28.851+08:00] screenshotBase64 end, cost: 50ms
+[2026-08-16T17:31:32.590+08:00] screenshotBase64 begin
+[2026-08-16T17:31:32.646+08:00] screenshotBase64 end, cost: 56ms
+[2026-08-16T17:31:32.866+08:00] keyboard type secret_sauce
+[2026-08-16T17:31:33.204+08:00] waitForNavigation begin at moment afterInvokeAction with timeout: 5000 and actionName: Input
+[2026-08-16T17:31:33.214+08:00] waitForNavigation end
+[2026-08-16T17:31:33.215+08:00] screenshotBase64 begin
+[2026-08-16T17:31:33.263+08:00] screenshotBase64 end, cost: 48ms
+[2026-08-16T17:31:36.117+08:00] screenshotBase64 begin
+[2026-08-16T17:31:36.171+08:00] screenshotBase64 end, cost: 54ms
+[2026-08-16T17:31:36.402+08:00] mouse move to 639, 395
+[2026-08-16T17:31:36.405+08:00] mouse click 639, 395, left, 1
+[2026-08-16T17:31:36.743+08:00] waitForNavigation begin at moment afterInvokeAction with timeout: 5000 and actionName: Tap
+[2026-08-16T17:31:36.751+08:00] waitForNavigation end
+[2026-08-16T17:31:36.752+08:00] screenshotBase64 begin
+[2026-08-16T17:31:36.803+08:00] screenshotBase64 end, cost: 51ms
+[2026-08-16T17:31:39.537+08:00] screenshotBase64 begin
+[2026-08-16T17:31:39.597+08:00] screenshotBase64 end, cost: 61ms
+[2026-08-16T17:31:42.621+08:00] screenshotBase64 begin
+[2026-08-16T17:31:42.673+08:00] screenshotBase64 end, cost: 52ms
+[2026-08-16T17:31:44.253+08:00] screenshotBase64 begin
+[2026-08-16T17:31:44.309+08:00] screenshotBase64 end, cost: 55ms
+[2026-08-16T17:31:44.323+08:00] screenshotBase64 begin
+[2026-08-16T17:31:44.370+08:00] screenshotBase64 end, cost: 47ms
+[2026-08-16T17:31:48.766+08:00] screenshotBase64 begin
+[2026-08-16T17:31:48.822+08:00] screenshotBase64 end, cost: 56ms
+[2026-08-16T17:31:49.048+08:00] mouse move to 1010, 366
+[2026-08-16T17:31:49.055+08:00] mouse click 1010, 366, left, 1
+[2026-08-16T17:31:49.372+08:00] waitForNavigation begin at moment afterInvokeAction with timeout: 5000 and actionName: Tap
+[2026-08-16T17:31:49.380+08:00] waitForNavigation end
+[2026-08-16T17:31:49.382+08:00] screenshotBase64 begin
+[2026-08-16T17:31:49.431+08:00] screenshotBase64 end, cost: 49ms
+[2026-08-16T17:31:54.902+08:00] screenshotBase64 begin
+[2026-08-16T17:31:54.952+08:00] screenshotBase64 end, cost: 50ms
+[2026-08-16T17:31:57.989+08:00] screenshotBase64 begin
+[2026-08-16T17:31:58.046+08:00] screenshotBase64 end, cost: 57ms
+[2026-08-16T17:32:00.534+08:00] screenshotBase64 begin
+[2026-08-16T17:32:00.591+08:00] screenshotBase64 end, cost: 57ms
+[2026-08-16T17:32:00.816+08:00] mouse move to 1151, 72
+[2026-08-16T17:32:00.823+08:00] mouse click 1151, 72, left, 1
+[2026-08-16T17:32:01.137+08:00] waitForNavigation begin at moment afterInvokeAction with timeout: 5000 and actionName: Tap
+[2026-08-16T17:32:01.145+08:00] waitForNavigation end
+[2026-08-16T17:32:01.147+08:00] screenshotBase64 begin
+[2026-08-16T17:32:01.195+08:00] screenshotBase64 end, cost: 48ms
+[2026-08-16T17:32:03.800+08:00] screenshotBase64 begin
+[2026-08-16T17:32:03.879+08:00] screenshotBase64 end, cost: 80ms
+[2026-08-16T17:32:05.914+08:00] screenshotBase64 begin
+[2026-08-16T17:32:05.963+08:00] screenshotBase64 end, cost: 49ms
+[2026-08-16T17:32:07.600+08:00] screenshotBase64 begin
+[2026-08-16T17:32:07.657+08:00] screenshotBase64 end, cost: 57ms
+[2026-08-16T17:39:12.917+08:00] Midscene - Added base-select appearance style for select elements because of forceChromeSelectRendering is enabled
+[2026-08-16T17:39:12.922+08:00] evaluate function begin
+[2026-08-16T17:39:12.937+08:00] evaluate function end
+[2026-08-16T17:39:12.938+08:00] screenshotBase64 begin
+[2026-08-16T17:39:13.033+08:00] screenshotBase64 end, cost: 95ms
+[2026-08-16T17:39:17.324+08:00] screenshotBase64 begin
+[2026-08-16T17:39:17.391+08:00] screenshotBase64 end, cost: 66ms
+[2026-08-16T17:39:17.631+08:00] mouse move to 639, 277
+[2026-08-16T17:39:17.654+08:00] mouse click 639, 277, left, 1
+[2026-08-16T17:39:18.008+08:00] waitForNavigation begin at moment afterInvokeAction with timeout: 5000 and actionName: Tap
+[2026-08-16T17:39:18.012+08:00] [midscene:warning] waitForNetworkIdle is skipped for Playwright. Playwright does not provide an equivalent underlying capability for the intended post-action network idle behavior here.
+[2026-08-16T17:39:18.071+08:00] waitForNavigation end
+[2026-08-16T17:39:18.072+08:00] screenshotBase64 begin
+[2026-08-16T17:39:18.149+08:00] screenshotBase64 end, cost: 76ms
+[2026-08-16T17:39:21.302+08:00] screenshotBase64 begin
+[2026-08-16T17:39:21.356+08:00] screenshotBase64 end, cost: 54ms
+[2026-08-16T17:39:21.577+08:00] keyboard type standard_user
+[2026-08-16T17:39:21.904+08:00] waitForNavigation begin at moment afterInvokeAction with timeout: 5000 and actionName: Input
+[2026-08-16T17:39:21.912+08:00] waitForNavigation end
+[2026-08-16T17:39:21.914+08:00] screenshotBase64 begin
+[2026-08-16T17:39:21.962+08:00] screenshotBase64 end, cost: 49ms
+[2026-08-16T17:39:25.160+08:00] screenshotBase64 begin
+[2026-08-16T17:39:25.231+08:00] screenshotBase64 end, cost: 71ms
+[2026-08-16T17:39:25.451+08:00] mouse move to 639, 349
+[2026-08-16T17:39:25.457+08:00] mouse click 639, 349, left, 1
+[2026-08-16T17:39:25.811+08:00] waitForNavigation begin at moment afterInvokeAction with timeout: 5000 and actionName: Tap
+[2026-08-16T17:39:25.823+08:00] waitForNavigation end
+[2026-08-16T17:39:25.824+08:00] screenshotBase64 begin
+[2026-08-16T17:39:25.868+08:00] screenshotBase64 end, cost: 44ms
+[2026-08-16T17:39:27.696+08:00] screenshotBase64 begin
+[2026-08-16T17:39:27.761+08:00] screenshotBase64 end, cost: 65ms
+[2026-08-16T17:39:27.984+08:00] keyboard type secret_sauce
+[2026-08-16T17:39:28.314+08:00] waitForNavigation begin at moment afterInvokeAction with timeout: 5000 and actionName: Input
+[2026-08-16T17:39:28.336+08:00] waitForNavigation end
+[2026-08-16T17:39:28.339+08:00] screenshotBase64 begin
+[2026-08-16T17:39:28.388+08:00] screenshotBase64 end, cost: 50ms
+[2026-08-16T17:39:31.690+08:00] screenshotBase64 begin
+[2026-08-16T17:39:31.741+08:00] screenshotBase64 end, cost: 51ms
+[2026-08-16T17:39:31.978+08:00] mouse move to 639, 438
+[2026-08-16T17:39:31.999+08:00] mouse click 639, 438, left, 1
+[2026-08-16T17:39:32.317+08:00] waitForNavigation begin at moment afterInvokeAction with timeout: 5000 and actionName: Tap
+[2026-08-16T17:39:32.335+08:00] waitForNavigation end
+[2026-08-16T17:39:32.336+08:00] screenshotBase64 begin
+[2026-08-16T17:39:32.394+08:00] screenshotBase64 end, cost: 58ms
+[2026-08-16T17:39:34.411+08:00] screenshotBase64 begin
+[2026-08-16T17:39:34.471+08:00] screenshotBase64 end, cost: 60ms
+[2026-08-16T17:39:39.498+08:00] screenshotBase64 begin
+[2026-08-16T17:39:39.560+08:00] screenshotBase64 end, cost: 62ms
+[2026-08-16T17:39:45.226+08:00] screenshotBase64 begin
+[2026-08-16T17:39:45.289+08:00] screenshotBase64 end, cost: 64ms
+[2026-08-16T17:39:45.520+08:00] mouse move to 513, 332
+[2026-08-16T17:39:45.526+08:00] mouse click 513, 332, left, 1
+[2026-08-16T17:39:45.847+08:00] waitForNavigation begin at moment afterInvokeAction with timeout: 5000 and actionName: Tap
+[2026-08-16T17:39:45.856+08:00] waitForNavigation end
+[2026-08-16T17:39:45.857+08:00] screenshotBase64 begin
+[2026-08-16T17:39:45.924+08:00] screenshotBase64 end, cost: 66ms
+[2026-08-16T17:39:49.410+08:00] screenshotBase64 begin
+[2026-08-16T17:39:49.467+08:00] screenshotBase64 end, cost: 58ms
+[2026-08-16T17:39:52.492+08:00] screenshotBase64 begin
+[2026-08-16T17:39:52.543+08:00] screenshotBase64 end, cost: 52ms
+[2026-08-16T17:39:55.264+08:00] screenshotBase64 begin
+[2026-08-16T17:39:55.320+08:00] screenshotBase64 end, cost: 56ms
+[2026-08-16T17:39:55.555+08:00] mouse move to 1151, 57
+[2026-08-16T17:39:55.559+08:00] mouse click 1151, 57, left, 1
+[2026-08-16T17:39:55.878+08:00] waitForNavigation begin at moment afterInvokeAction with timeout: 5000 and actionName: Tap
+[2026-08-16T17:39:55.892+08:00] waitForNavigation end
+[2026-08-16T17:39:55.895+08:00] screenshotBase64 begin
+[2026-08-16T17:39:55.946+08:00] screenshotBase64 end, cost: 50ms
+[2026-08-16T17:39:58.313+08:00] screenshotBase64 begin
+[2026-08-16T17:39:58.385+08:00] screenshotBase64 end, cost: 72ms
+[2026-08-16T18:10:27.567+08:00] Midscene - Added base-select appearance style for select elements because of forceChromeSelectRendering is enabled
+[2026-08-16T18:10:27.577+08:00] evaluate function begin
+[2026-08-16T18:10:27.595+08:00] evaluate function end
+[2026-08-16T18:10:27.596+08:00] screenshotBase64 begin
+[2026-08-16T18:10:27.787+08:00] screenshotBase64 end, cost: 191ms
+[2026-08-16T18:10:30.913+08:00] screenshotBase64 begin
+[2026-08-16T18:10:30.966+08:00] screenshotBase64 end, cost: 52ms
+[2026-08-16T18:10:30.985+08:00] screenshotBase64 begin
+[2026-08-16T18:10:31.045+08:00] screenshotBase64 end, cost: 61ms
+[2026-08-16T18:10:35.410+08:00] screenshotBase64 begin
+[2026-08-16T18:10:35.440+08:00] screenshotBase64 end, cost: 30ms
+[2026-08-16T18:10:35.678+08:00] mouse move to 1049, 618
+[2026-08-16T18:10:35.686+08:00] mouse click 1049, 618, left, 1
+[2026-08-16T18:10:36.018+08:00] waitForNavigation begin at moment afterInvokeAction with timeout: 5000 and actionName: Tap
+[2026-08-16T18:10:36.021+08:00] [midscene:warning] waitForNetworkIdle is skipped for Playwright. Playwright does not provide an equivalent underlying capability for the intended post-action network idle behavior here.
+[2026-08-16T18:10:36.037+08:00] waitForNavigation end
+[2026-08-16T18:10:36.038+08:00] screenshotBase64 begin
+[2026-08-16T18:10:36.098+08:00] screenshotBase64 end, cost: 60ms
+[2026-08-16T18:10:39.672+08:00] screenshotBase64 begin
+[2026-08-16T18:10:39.710+08:00] screenshotBase64 end, cost: 38ms
+[2026-08-16T18:10:42.732+08:00] screenshotBase64 begin
+[2026-08-16T18:10:42.774+08:00] screenshotBase64 end, cost: 41ms
+[2026-08-16T18:10:46.087+08:00] screenshotBase64 begin
+[2026-08-16T18:10:46.145+08:00] screenshotBase64 end, cost: 58ms
+[2026-08-16T18:10:46.369+08:00] mouse move to 1151, 65
+[2026-08-16T18:10:46.385+08:00] mouse click 1151, 65, left, 1
+[2026-08-16T18:10:46.709+08:00] waitForNavigation begin at moment afterInvokeAction with timeout: 5000 and actionName: Tap
+[2026-08-16T18:10:46.721+08:00] waitForNavigation end
+[2026-08-16T18:10:46.723+08:00] screenshotBase64 begin
+[2026-08-16T18:10:46.787+08:00] screenshotBase64 end, cost: 64ms
+[2026-08-16T18:10:49.570+08:00] screenshotBase64 begin
+[2026-08-16T18:10:49.613+08:00] screenshotBase64 end, cost: 42ms
+[2026-08-16T18:10:51.646+08:00] screenshotBase64 begin
+[2026-08-16T18:10:51.696+08:00] screenshotBase64 end, cost: 50ms
+[2026-08-16T18:10:53.434+08:00] screenshotBase64 begin
+[2026-08-16T18:10:53.479+08:00] screenshotBase64 end, cost: 45ms

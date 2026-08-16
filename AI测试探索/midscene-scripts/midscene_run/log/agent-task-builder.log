@@ -1,0 +1,302 @@
+[2026-08-16T17:26:13.277+08:00] will prepend locate param for field action.type=Input param={"prompt":"Username input field","bbox":[150,320,850,380],"locatedPixelBbox":[192,230,1087,273]} locatePlan={"type":"Locate","param":{"prompt":"Username input field","bbox":[150,320,850,380],"locatedPixelBbox":[192,230,1087,273]},"thought":""} hasLocatedPixelBbox=true
+[2026-08-16T17:26:13.286+08:00] executing action Input {
+  value: 'standard_user',
+  locate: {
+    rect: { left: 192, top: 230, width: 896, height: 44 },
+    center: [ 639, 251 ],
+    description: 'Username input field'
+  }
+} taskContext.element.center: 639,251
+[2026-08-16T17:26:13.286+08:00] will call "beforeInvokeAction" for interface with action name Input
+[2026-08-16T17:26:13.287+08:00] called "beforeInvokeAction" for interface with action name Input
+[2026-08-16T17:26:13.502+08:00] calling action Input
+[2026-08-16T17:26:14.251+08:00] called action Input result: undefined
+[2026-08-16T17:26:14.557+08:00] will call "afterInvokeAction" for interface with action name Input
+[2026-08-16T17:26:14.603+08:00] called "afterInvokeAction" for interface with action name Input
+[2026-08-16T17:26:17.454+08:00] will prepend locate param for field action.type=Input param={"prompt":"Password input field","bbox":[150,420,850,480],"locatedPixelBbox":[192,302,1087,345]} locatePlan={"type":"Locate","param":{"prompt":"Password input field","bbox":[150,420,850,480],"locatedPixelBbox":[192,302,1087,345]},"thought":""} hasLocatedPixelBbox=true
+[2026-08-16T17:26:17.460+08:00] executing action Input {
+  value: 'secret_sauce',
+  locate: {
+    rect: { left: 192, top: 302, width: 896, height: 44 },
+    center: [ 639, 323 ],
+    description: 'Password input field'
+  }
+} taskContext.element.center: 639,323
+[2026-08-16T17:26:17.460+08:00] will call "beforeInvokeAction" for interface with action name Input
+[2026-08-16T17:26:17.461+08:00] called "beforeInvokeAction" for interface with action name Input
+[2026-08-16T17:26:17.665+08:00] calling action Input
+[2026-08-16T17:26:18.388+08:00] called action Input result: undefined
+[2026-08-16T17:26:18.704+08:00] will call "afterInvokeAction" for interface with action name Input
+[2026-08-16T17:26:18.717+08:00] called "afterInvokeAction" for interface with action name Input
+[2026-08-16T17:26:22.510+08:00] will prepend locate param for field action.type=Tap param={"prompt":"Login button","bbox":[350,520,650,580],"locatedPixelBbox":[448,374,831,417]} locatePlan={"type":"Locate","param":{"prompt":"Login button","bbox":[350,520,650,580],"locatedPixelBbox":[448,374,831,417]},"thought":""} hasLocatedPixelBbox=true
+[2026-08-16T17:26:22.519+08:00] executing action Tap {
+  locate: {
+    rect: { left: 448, top: 374, width: 384, height: 44 },
+    center: [ 639, 395 ],
+    description: 'Login button'
+  }
+} taskContext.element.center: 639,395
+[2026-08-16T17:26:22.519+08:00] will call "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T17:26:22.520+08:00] called "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T17:26:22.722+08:00] calling action Tap
+[2026-08-16T17:26:22.731+08:00] called action Tap result: undefined
+[2026-08-16T17:26:23.047+08:00] will call "afterInvokeAction" for interface with action name Tap
+[2026-08-16T17:26:23.068+08:00] called "afterInvokeAction" for interface with action name Tap
+[2026-08-16T17:26:32.974+08:00] will prepend locate param for field action.type=Scroll param={"prompt":"商品列表区域","bbox":[100,200,900,800],"locatedPixelBbox":[128,144,1151,575]} locatePlan={"type":"Locate","param":{"prompt":"商品列表区域","bbox":[100,200,900,800],"locatedPixelBbox":[128,144,1151,575]},"thought":""} hasLocatedPixelBbox=true
+[2026-08-16T17:26:32.982+08:00] executing action Scroll {
+  direction: 'down',
+  scrollType: 'singleAction',
+  locate: {
+    rect: { left: 128, top: 144, width: 1024, height: 432 },
+    center: [ 639, 359 ],
+    description: '商品列表区域'
+  }
+} taskContext.element.center: 639,359
+[2026-08-16T17:26:32.982+08:00] will call "beforeInvokeAction" for interface with action name Scroll
+[2026-08-16T17:26:32.982+08:00] called "beforeInvokeAction" for interface with action name Scroll
+[2026-08-16T17:26:33.186+08:00] calling action Scroll
+[2026-08-16T17:26:33.712+08:00] called action Scroll result: undefined
+[2026-08-16T17:26:34.021+08:00] will call "afterInvokeAction" for interface with action name Scroll
+[2026-08-16T17:26:34.036+08:00] called "afterInvokeAction" for interface with action name Scroll
+[2026-08-16T17:26:38.119+08:00] will prepend locate param for field action.type=Tap param={"prompt":"价格为¥29.9的商品，Sauce Labs Backpack","bbox":[150,320,450,380],"locatedPixelBbox":[192,230,576,273]} locatePlan={"type":"Locate","param":{"prompt":"价格为¥29.9的商品，Sauce Labs Backpack","bbox":[150,320,450,380],"locatedPixelBbox":[192,230,576,273]},"thought":""} hasLocatedPixelBbox=true
+[2026-08-16T17:26:38.127+08:00] executing action Tap {
+  locate: {
+    rect: { left: 192, top: 230, width: 385, height: 44 },
+    center: [ 384, 251 ],
+    description: '价格为¥29.9的商品，Sauce Labs Backpack'
+  }
+} taskContext.element.center: 384,251
+[2026-08-16T17:26:38.127+08:00] will call "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T17:26:38.127+08:00] called "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T17:26:38.335+08:00] calling action Tap
+[2026-08-16T17:26:38.360+08:00] called action Tap result: undefined
+[2026-08-16T17:26:38.673+08:00] will call "afterInvokeAction" for interface with action name Tap
+[2026-08-16T17:26:38.681+08:00] called "afterInvokeAction" for interface with action name Tap
+[2026-08-16T17:26:42.440+08:00] will prepend locate param for field action.type=Tap param={"prompt":"加入购物车按钮","bbox":[300,850,700,920],"locatedPixelBbox":[384,611,895,661]} locatePlan={"type":"Locate","param":{"prompt":"加入购物车按钮","bbox":[300,850,700,920],"locatedPixelBbox":[384,611,895,661]},"thought":""} hasLocatedPixelBbox=true
+[2026-08-16T17:26:42.452+08:00] executing action Tap {
+  locate: {
+    rect: { left: 384, top: 611, width: 512, height: 51 },
+    center: [ 639, 636 ],
+    description: '加入购物车按钮'
+  }
+} taskContext.element.center: 639,636
+[2026-08-16T17:26:42.452+08:00] will call "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T17:26:42.452+08:00] called "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T17:26:42.667+08:00] calling action Tap
+[2026-08-16T17:26:42.672+08:00] called action Tap result: undefined
+[2026-08-16T17:26:42.977+08:00] will call "afterInvokeAction" for interface with action name Tap
+[2026-08-16T17:26:42.996+08:00] called "afterInvokeAction" for interface with action name Tap
+[2026-08-16T17:26:50.402+08:00] will prepend locate param for field action.type=Tap param={"prompt":"右上角的购物车图标","bbox":[850,40,920,110],"locatedPixelBbox":[1087,29,1177,79]} locatePlan={"type":"Locate","param":{"prompt":"右上角的购物车图标","bbox":[850,40,920,110],"locatedPixelBbox":[1087,29,1177,79]},"thought":""} hasLocatedPixelBbox=true
+[2026-08-16T17:26:50.413+08:00] executing action Tap {
+  locate: {
+    rect: { left: 1087, top: 29, width: 91, height: 51 },
+    center: [ 1132, 54 ],
+    description: '右上角的购物车图标'
+  }
+} taskContext.element.center: 1132,54
+[2026-08-16T17:26:50.413+08:00] will call "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T17:26:50.413+08:00] called "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T17:26:50.627+08:00] calling action Tap
+[2026-08-16T17:26:50.641+08:00] called action Tap result: undefined
+[2026-08-16T17:26:50.954+08:00] will call "afterInvokeAction" for interface with action name Tap
+[2026-08-16T17:26:50.966+08:00] called "afterInvokeAction" for interface with action name Tap
+[2026-08-16T17:31:20.595+08:00] will prepend locate param for field action.type=Tap param={"prompt":"用户名输入框","bbox":[150,320,850,400],"locatedPixelBbox":[192,230,1087,288]} locatePlan={"type":"Locate","param":{"prompt":"用户名输入框","bbox":[150,320,850,400],"locatedPixelBbox":[192,230,1087,288]},"thought":""} hasLocatedPixelBbox=true
+[2026-08-16T17:31:20.606+08:00] executing action Tap {
+  locate: {
+    rect: { left: 192, top: 230, width: 896, height: 59 },
+    center: [ 639, 259 ],
+    description: '用户名输入框'
+  }
+} taskContext.element.center: 639,259
+[2026-08-16T17:31:20.606+08:00] will call "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T17:31:20.606+08:00] called "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T17:31:20.820+08:00] calling action Tap
+[2026-08-16T17:31:20.859+08:00] called action Tap result: undefined
+[2026-08-16T17:31:21.160+08:00] will call "afterInvokeAction" for interface with action name Tap
+[2026-08-16T17:31:21.211+08:00] called "afterInvokeAction" for interface with action name Tap
+[2026-08-16T17:31:23.602+08:00] field 'locate' is not provided for action Input
+[2026-08-16T17:31:23.608+08:00] executing action Input { value: 'standard_user' } taskContext.element.center: undefined
+[2026-08-16T17:31:23.608+08:00] will call "beforeInvokeAction" for interface with action name Input
+[2026-08-16T17:31:23.609+08:00] called "beforeInvokeAction" for interface with action name Input
+[2026-08-16T17:31:23.823+08:00] calling action Input
+[2026-08-16T17:31:23.846+08:00] called action Input result: undefined
+[2026-08-16T17:31:24.147+08:00] will call "afterInvokeAction" for interface with action name Input
+[2026-08-16T17:31:24.157+08:00] called "afterInvokeAction" for interface with action name Input
+[2026-08-16T17:31:28.207+08:00] will prepend locate param for field action.type=Tap param={"prompt":"密码输入框","bbox":[150,420,850,500],"locatedPixelBbox":[192,302,1087,360]} locatePlan={"type":"Locate","param":{"prompt":"密码输入框","bbox":[150,420,850,500],"locatedPixelBbox":[192,302,1087,360]},"thought":""} hasLocatedPixelBbox=true
+[2026-08-16T17:31:28.215+08:00] executing action Tap {
+  locate: {
+    rect: { left: 192, top: 302, width: 896, height: 59 },
+    center: [ 639, 331 ],
+    description: '密码输入框'
+  }
+} taskContext.element.center: 639,331
+[2026-08-16T17:31:28.216+08:00] will call "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T17:31:28.216+08:00] called "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T17:31:28.420+08:00] calling action Tap
+[2026-08-16T17:31:28.476+08:00] called action Tap result: undefined
+[2026-08-16T17:31:28.791+08:00] will call "afterInvokeAction" for interface with action name Tap
+[2026-08-16T17:31:28.800+08:00] called "afterInvokeAction" for interface with action name Tap
+[2026-08-16T17:31:32.655+08:00] field 'locate' is not provided for action Input
+[2026-08-16T17:31:32.659+08:00] executing action Input { value: 'secret_sauce' } taskContext.element.center: undefined
+[2026-08-16T17:31:32.659+08:00] will call "beforeInvokeAction" for interface with action name Input
+[2026-08-16T17:31:32.660+08:00] called "beforeInvokeAction" for interface with action name Input
+[2026-08-16T17:31:32.866+08:00] calling action Input
+[2026-08-16T17:31:32.892+08:00] called action Input result: undefined
+[2026-08-16T17:31:33.204+08:00] will call "afterInvokeAction" for interface with action name Input
+[2026-08-16T17:31:33.214+08:00] called "afterInvokeAction" for interface with action name Input
+[2026-08-16T17:31:36.178+08:00] will prepend locate param for field action.type=Tap param={"prompt":"登录按钮","bbox":[400,520,600,580],"locatedPixelBbox":[512,374,767,417]} locatePlan={"type":"Locate","param":{"prompt":"登录按钮","bbox":[400,520,600,580],"locatedPixelBbox":[512,374,767,417]},"thought":""} hasLocatedPixelBbox=true
+[2026-08-16T17:31:36.189+08:00] executing action Tap {
+  locate: {
+    rect: { left: 512, top: 374, width: 256, height: 44 },
+    center: [ 639, 395 ],
+    description: '登录按钮'
+  }
+} taskContext.element.center: 639,395
+[2026-08-16T17:31:36.190+08:00] will call "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T17:31:36.190+08:00] called "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T17:31:36.402+08:00] calling action Tap
+[2026-08-16T17:31:36.439+08:00] called action Tap result: undefined
+[2026-08-16T17:31:36.743+08:00] will call "afterInvokeAction" for interface with action name Tap
+[2026-08-16T17:31:36.752+08:00] called "afterInvokeAction" for interface with action name Tap
+[2026-08-16T17:31:48.828+08:00] will prepend locate param for field action.type=Tap param={"prompt":"价格最低的商品的 Add to cart 按钮","bbox":[720,490,860,530],"locatedPixelBbox":[921,352,1100,381]} locatePlan={"type":"Locate","param":{"prompt":"价格最低的商品的 Add to cart 按钮","bbox":[720,490,860,530],"locatedPixelBbox":[921,352,1100,381]},"thought":""} hasLocatedPixelBbox=true
+[2026-08-16T17:31:48.836+08:00] executing action Tap {
+  locate: {
+    rect: { left: 921, top: 352, width: 180, height: 30 },
+    center: [ 1010, 366 ],
+    description: '价格最低的商品的 Add to cart 按钮'
+  }
+} taskContext.element.center: 1010,366
+[2026-08-16T17:31:48.836+08:00] will call "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T17:31:48.836+08:00] called "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T17:31:49.047+08:00] calling action Tap
+[2026-08-16T17:31:49.060+08:00] called action Tap result: undefined
+[2026-08-16T17:31:49.372+08:00] will call "afterInvokeAction" for interface with action name Tap
+[2026-08-16T17:31:49.381+08:00] called "afterInvokeAction" for interface with action name Tap
+[2026-08-16T17:32:00.599+08:00] will prepend locate param for field action.type=Tap param={"prompt":"右上角的购物车图标","bbox":[850,50,950,150],"locatedPixelBbox":[1087,36,1215,108]} locatePlan={"type":"Locate","param":{"prompt":"右上角的购物车图标","bbox":[850,50,950,150],"locatedPixelBbox":[1087,36,1215,108]},"thought":""} hasLocatedPixelBbox=true
+[2026-08-16T17:32:00.606+08:00] executing action Tap {
+  locate: {
+    rect: { left: 1087, top: 36, width: 129, height: 73 },
+    center: [ 1151, 72 ],
+    description: '右上角的购物车图标'
+  }
+} taskContext.element.center: 1151,72
+[2026-08-16T17:32:00.607+08:00] will call "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T17:32:00.607+08:00] called "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T17:32:00.815+08:00] calling action Tap
+[2026-08-16T17:32:00.831+08:00] called action Tap result: undefined
+[2026-08-16T17:32:01.137+08:00] will call "afterInvokeAction" for interface with action name Tap
+[2026-08-16T17:32:01.146+08:00] called "afterInvokeAction" for interface with action name Tap
+[2026-08-16T17:39:17.400+08:00] will prepend locate param for field action.type=Tap param={"prompt":"用户名输入框","bbox":[200,350,800,420],"locatedPixelBbox":[256,252,1023,302]} locatePlan={"type":"Locate","param":{"prompt":"用户名输入框","bbox":[200,350,800,420],"locatedPixelBbox":[256,252,1023,302]},"thought":""} hasLocatedPixelBbox=true
+[2026-08-16T17:39:17.415+08:00] executing action Tap {
+  locate: {
+    rect: { left: 256, top: 252, width: 768, height: 51 },
+    center: [ 639, 277 ],
+    description: '用户名输入框'
+  }
+} taskContext.element.center: 639,277
+[2026-08-16T17:39:17.415+08:00] will call "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T17:39:17.415+08:00] called "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T17:39:17.629+08:00] calling action Tap
+[2026-08-16T17:39:17.692+08:00] called action Tap result: undefined
+[2026-08-16T17:39:18.006+08:00] will call "afterInvokeAction" for interface with action name Tap
+[2026-08-16T17:39:18.071+08:00] called "afterInvokeAction" for interface with action name Tap
+[2026-08-16T17:39:21.361+08:00] field 'locate' is not provided for action Input
+[2026-08-16T17:39:21.366+08:00] executing action Input { value: 'standard_user' } taskContext.element.center: undefined
+[2026-08-16T17:39:21.366+08:00] will call "beforeInvokeAction" for interface with action name Input
+[2026-08-16T17:39:21.367+08:00] called "beforeInvokeAction" for interface with action name Input
+[2026-08-16T17:39:21.576+08:00] calling action Input
+[2026-08-16T17:39:21.602+08:00] called action Input result: undefined
+[2026-08-16T17:39:21.904+08:00] will call "afterInvokeAction" for interface with action name Input
+[2026-08-16T17:39:21.913+08:00] called "afterInvokeAction" for interface with action name Input
+[2026-08-16T17:39:25.239+08:00] will prepend locate param for field action.type=Tap param={"prompt":"密码输入框","bbox":[200,450,800,520],"locatedPixelBbox":[256,324,1023,374]} locatePlan={"type":"Locate","param":{"prompt":"密码输入框","bbox":[200,450,800,520],"locatedPixelBbox":[256,324,1023,374]},"thought":""} hasLocatedPixelBbox=true
+[2026-08-16T17:39:25.246+08:00] executing action Tap {
+  locate: {
+    rect: { left: 256, top: 324, width: 768, height: 51 },
+    center: [ 639, 349 ],
+    description: '密码输入框'
+  }
+} taskContext.element.center: 639,349
+[2026-08-16T17:39:25.246+08:00] will call "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T17:39:25.246+08:00] called "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T17:39:25.451+08:00] calling action Tap
+[2026-08-16T17:39:25.496+08:00] called action Tap result: undefined
+[2026-08-16T17:39:25.810+08:00] will call "afterInvokeAction" for interface with action name Tap
+[2026-08-16T17:39:25.823+08:00] called "afterInvokeAction" for interface with action name Tap
+[2026-08-16T17:39:27.767+08:00] field 'locate' is not provided for action Input
+[2026-08-16T17:39:27.774+08:00] executing action Input { value: 'secret_sauce' } taskContext.element.center: undefined
+[2026-08-16T17:39:27.774+08:00] will call "beforeInvokeAction" for interface with action name Input
+[2026-08-16T17:39:27.774+08:00] called "beforeInvokeAction" for interface with action name Input
+[2026-08-16T17:39:27.984+08:00] calling action Input
+[2026-08-16T17:39:28.007+08:00] called action Input result: undefined
+[2026-08-16T17:39:28.312+08:00] will call "afterInvokeAction" for interface with action name Input
+[2026-08-16T17:39:28.336+08:00] called "afterInvokeAction" for interface with action name Input
+[2026-08-16T17:39:31.747+08:00] will prepend locate param for field action.type=Tap param={"prompt":"登录按钮","bbox":[350,580,650,640],"locatedPixelBbox":[448,417,831,460]} locatePlan={"type":"Locate","param":{"prompt":"登录按钮","bbox":[350,580,650,640],"locatedPixelBbox":[448,417,831,460]},"thought":""} hasLocatedPixelBbox=true
+[2026-08-16T17:39:31.759+08:00] executing action Tap {
+  locate: {
+    rect: { left: 448, top: 417, width: 384, height: 44 },
+    center: [ 639, 438 ],
+    description: '登录按钮'
+  }
+} taskContext.element.center: 639,438
+[2026-08-16T17:39:31.759+08:00] will call "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T17:39:31.759+08:00] called "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T17:39:31.977+08:00] calling action Tap
+[2026-08-16T17:39:32.007+08:00] called action Tap result: undefined
+[2026-08-16T17:39:32.316+08:00] will call "afterInvokeAction" for interface with action name Tap
+[2026-08-16T17:39:32.335+08:00] called "afterInvokeAction" for interface with action name Tap
+[2026-08-16T17:39:45.297+08:00] will prepend locate param for field action.type=Tap param={"prompt":"Sauce Labs Onesie 商品下方的 Add to cart 按钮","bbox":[345,442,458,483],"locatedPixelBbox":[441,318,586,347]} locatePlan={"type":"Locate","param":{"prompt":"Sauce Labs Onesie 商品下方的 Add to cart 按钮","bbox":[345,442,458,483],"locatedPixelBbox":[441,318,586,347]},"thought":""} hasLocatedPixelBbox=true
+[2026-08-16T17:39:45.307+08:00] executing action Tap {
+  locate: {
+    rect: { left: 441, top: 318, width: 146, height: 30 },
+    center: [ 513, 332 ],
+    description: 'Sauce Labs Onesie 商品下方的 Add to cart 按钮'
+  }
+} taskContext.element.center: 513,332
+[2026-08-16T17:39:45.307+08:00] will call "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T17:39:45.308+08:00] called "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T17:39:45.519+08:00] calling action Tap
+[2026-08-16T17:39:45.535+08:00] called action Tap result: undefined
+[2026-08-16T17:39:45.847+08:00] will call "afterInvokeAction" for interface with action name Tap
+[2026-08-16T17:39:45.856+08:00] called "afterInvokeAction" for interface with action name Tap
+[2026-08-16T17:39:55.329+08:00] will prepend locate param for field action.type=Tap param={"prompt":"右上角的购物车图标","bbox":[850,40,950,120],"locatedPixelBbox":[1087,29,1215,86]} locatePlan={"type":"Locate","param":{"prompt":"右上角的购物车图标","bbox":[850,40,950,120],"locatedPixelBbox":[1087,29,1215,86]},"thought":""} hasLocatedPixelBbox=true
+[2026-08-16T17:39:55.339+08:00] executing action Tap {
+  locate: {
+    rect: { left: 1087, top: 29, width: 129, height: 58 },
+    center: [ 1151, 57 ],
+    description: '右上角的购物车图标'
+  }
+} taskContext.element.center: 1151,57
+[2026-08-16T17:39:55.339+08:00] will call "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T17:39:55.340+08:00] called "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T17:39:55.555+08:00] calling action Tap
+[2026-08-16T17:39:55.561+08:00] called action Tap result: undefined
+[2026-08-16T17:39:55.877+08:00] will call "afterInvokeAction" for interface with action name Tap
+[2026-08-16T17:39:55.893+08:00] called "afterInvokeAction" for interface with action name Tap
+[2026-08-16T18:10:35.451+08:00] will prepend locate param for field action.type=Tap param={"prompt":"价格最低的商品的 \"Add to cart\" 按钮","bbox":[720,840,920,880],"locatedPixelBbox":[921,604,1177,633]} locatePlan={"type":"Locate","param":{"prompt":"价格最低的商品的 \"Add to cart\" 按钮","bbox":[720,840,920,880],"locatedPixelBbox":[921,604,1177,633]},"thought":""} hasLocatedPixelBbox=true
+[2026-08-16T18:10:35.459+08:00] executing action Tap {
+  locate: {
+    rect: { left: 921, top: 604, width: 257, height: 30 },
+    center: [ 1049, 618 ],
+    description: '价格最低的商品的 "Add to cart" 按钮'
+  }
+} taskContext.element.center: 1049,618
+[2026-08-16T18:10:35.460+08:00] will call "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T18:10:35.460+08:00] called "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T18:10:35.677+08:00] calling action Tap
+[2026-08-16T18:10:35.703+08:00] called action Tap result: undefined
+[2026-08-16T18:10:36.017+08:00] will call "afterInvokeAction" for interface with action name Tap
+[2026-08-16T18:10:36.038+08:00] called "afterInvokeAction" for interface with action name Tap
+[2026-08-16T18:10:46.155+08:00] will prepend locate param for field action.type=Tap param={"prompt":"右上角的购物车图标","bbox":[850,40,950,140],"locatedPixelBbox":[1087,29,1215,101]} locatePlan={"type":"Locate","param":{"prompt":"右上角的购物车图标","bbox":[850,40,950,140],"locatedPixelBbox":[1087,29,1215,101]},"thought":""} hasLocatedPixelBbox=true
+[2026-08-16T18:10:46.161+08:00] executing action Tap {
+  locate: {
+    rect: { left: 1087, top: 29, width: 129, height: 73 },
+    center: [ 1151, 65 ],
+    description: '右上角的购物车图标'
+  }
+} taskContext.element.center: 1151,65
+[2026-08-16T18:10:46.161+08:00] will call "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T18:10:46.161+08:00] called "beforeInvokeAction" for interface with action name Tap
+[2026-08-16T18:10:46.369+08:00] calling action Tap
+[2026-08-16T18:10:46.393+08:00] called action Tap result: undefined
+[2026-08-16T18:10:46.709+08:00] will call "afterInvokeAction" for interface with action name Tap
+[2026-08-16T18:10:46.721+08:00] called "afterInvokeAction" for interface with action name Tap

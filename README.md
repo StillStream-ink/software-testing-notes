@@ -1,6 +1,6 @@
 # 软件测试学习笔记 & 作品集
 
-> 从零开始的软件测试学习之路，记录学习过程与实战产出。
+>从零开始，到完成 Web 自动化 + 接口自动化 + CI/CD 持续集成的完整测试项目
 > ![CI](https://github.com/StillStream-ink/software-testing-notes/actions/workflows/ci.yml/badge.svg)
 
 ## 关于我

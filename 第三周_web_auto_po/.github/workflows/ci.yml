@@ -11,9 +11,6 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./第三周_web_auto_po
 
     steps:
       - name: Checkout code
@@ -26,6 +23,7 @@ jobs:
 
       - name: Install dependencies
         run: |
+          cd 第三周_web_auto_po
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install python-dotenv
@@ -33,6 +31,7 @@ jobs:
 
       - name: Run tests
         run: |
+          cd 第三周_web_auto_po
           python -m pytest tests/test_saucedemo_po.py -n 2 -v --alluredir=./allure-results --clean-alluredir
           cp config/categories.json allure-results/categories.json
 
@@ -40,13 +39,13 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: allure-results
-          path: allure-results
+          path: 第三周_web_auto_po/allure-results
 
       - name: Generate Allure Report
         uses: simple-elf/allure-report-action@master
         if: always()
         with:
-          allure_results: allure-results
+          allure_results: 第三周_web_auto_po/allure-results
           allure_history: allure-history
 
       - name: Deploy Allure Report to GitHub Pages

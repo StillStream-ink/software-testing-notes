@@ -4,6 +4,15 @@ import os
 import logging
 import time
 from playwright.sync_api import sync_playwright
+from dotenv import load_dotenv
+
+load_dotenv()  # 读取 .env 文件中的环境变量
+
+def get_credentials():
+    return {
+        "standard_user": os.getenv("SD_STANDARD_USER", "standard_user"),
+        "password": os.getenv("SD_PASSWORD", "secret_sauce"),
+    }
 
 # ========== 日志配置 ==========
 def setup_logging():
@@ -65,7 +74,7 @@ def logged_in_page(page, config):
     """已登录标准用户的 page 对象"""
     from pages.login_page import LoginPage
     login_page = LoginPage(page)
-    login_page.navigate().login("standard_user", config["users"]["standard_user"])
+    login_page.navigate().login("standard_user", get_credentials()["password"])
     return page
 
 # ========== 失败自动截图 ==========

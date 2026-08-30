@@ -28,7 +28,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+           pip install -r 第三周_web_auto_po/requirements.txt
           playwright install --with-deps chromium
 
       - name: Run tests

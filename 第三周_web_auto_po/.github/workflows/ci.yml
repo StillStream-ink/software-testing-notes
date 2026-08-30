@@ -23,13 +23,13 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          
+
       - name: Install dependencies
         run: |
-          cd 第三周_web_auto_po
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          playwright install --with-deps chromium@1.44.0   # ✅ 固定版本
+          pip install python-dotenv
+          playwright install --with-deps chromium@1.44.0
 
       - name: Run tests
         run: |

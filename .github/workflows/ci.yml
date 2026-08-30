@@ -21,7 +21,10 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install pytest playwright allure-pytest
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install python-dotenv
+          pip list | grep dotenv   # 调试：确认是否安装成功
           playwright install --with-deps chromium
 
       - name: Debug directory structure

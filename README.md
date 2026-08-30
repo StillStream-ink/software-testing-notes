@@ -2,6 +2,11 @@
 
 > 从零开始，到完成 Web 自动化 + 接口自动化 + CI/CD 持续集成的完整测试项目
 >
+<<<<<<< HEAD
+=======
+> 目标岗位：初级测试工程师 / 初级自动化测试工程师
+>
+>>>>>>> 8375006 (docs: 更新根目录README，补充SauceDemo项目16条用例说明)
 > [![CI](https://github.com/StillStream-ink/software-testing-notes/actions/workflows/ci.yml/badge.svg)](https://github.com/StillStream-ink/software-testing-notes/actions/workflows/ci.yml)
 
 

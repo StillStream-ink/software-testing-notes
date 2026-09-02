@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# 依赖与构建
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# 测试运行产物
+allure-results/
+allure-report/
+reports/
+logs/
+*.log
+
+# 失败截图与追踪
+images/failed_*.png
+images/*.png
+trace.zip
+*.zip
+
+# 视觉回归快照
+__snapshots__/
+*.snap
+
+# 敏感信息
+.env
+*.local
+
+# IDE / 系统
+.idea/
+.vscode/
+.DS_Store

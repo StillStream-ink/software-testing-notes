@@ -1,7 +1,6 @@
 # 软件测试学习笔记 & 作品集
 
 > 从零开始，到完成 Web 自动化 + 接口自动化 + CI/CD 持续集成的完整测试项目
-
 > 目标岗位：初级测试工程师 / 初级自动化测试工程师
 > [![CI](https://github.com/StillStream-ink/software-testing-notes/actions/workflows/ci.yml/badge.svg)](https://github.com/StillStream-ink/software-testing-notes/actions/workflows/ci.yml)
 
